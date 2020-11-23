@@ -18,7 +18,5 @@ public class StudentDatabaseApp {
 			students[n].payTuition();
 			System.out.println(students[n].showStatus());
 		}
-		
 	}
-
 }
