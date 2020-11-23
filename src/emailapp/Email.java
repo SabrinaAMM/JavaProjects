@@ -26,11 +26,9 @@ public class Email {
 		
 		//combine Elements to generate Email
 		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-		
-		
 	}
 	   
-		//ask for department
+	//ask for department
 	private String setDepartment() {
 		System.out.println("DEPARTMENT CODE\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter department code");
 		Scanner in = new Scanner(System.in);
@@ -41,7 +39,7 @@ public class Email {
 		else {return "";}
 	}
 		
-		//generate random password
+	//generate random password
 	private String randomPassword(int length) {
 		String passwordSet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 		char[] password = new char[length];
@@ -52,17 +50,17 @@ public class Email {
 		return new String(password);
 	}
 		
-		//set the mailbox Capacity
+	//set the mailbox Capacity
 	public void setMailboxCapacity(int capacity) {
 		this.mailboxCapacity = capacity;
 	}
 
-		//set alternate Email
+	//set alternate Email
 	public void setAlternateEmail(String altEmail) {
 		this.alternateEmail = altEmail;
 	}
 		
-		//change passwords
+	//change passwords
 	public void changePassword(String password) {
 		this.password = password;
 	}
@@ -73,9 +71,9 @@ public class Email {
 	
 	public String showInfo() {
 		return "DISPLAY NAME: " + firstName + lastName +
-				"\nCOMPANY EMAIL: " + email +
-				"\nMAILBOX CAPACITY: " + mailboxCapacity + "mb"+
-				"\nPASSWORD: " + password;
-		
+		"\nCOMPANY EMAIL: " + email +
+		"\nMAILBOX CAPACITY: " + mailboxCapacity + "mb"+
+		"\nPASSWORD: " + password;
 	}
 }
+
