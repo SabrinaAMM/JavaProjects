@@ -1,4 +1,4 @@
-package school.management.system;
+package SchoolManagementSystem;
 
 public class Teacher {
 	private int id;
