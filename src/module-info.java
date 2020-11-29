@@ -1,4 +1,4 @@
 module JavaProjects {
 	
-	requires java.desktop;
+	requires java.desktop; //needed for GUI
 }
